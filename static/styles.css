@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+}
+
+:root {
+  --font-geist: 'Geist', ui-sans-serif, system-ui, sans-serif;
+}
+
+@keyframes sparkle-fade {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.4);
+  }
+}
+
+.sparkle-dot {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  transform: translate(-50%, -50%);
+  animation: sparkle-fade 4s ease-out forwards;
+}
+
+@keyframes char-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#header-subtitle .char {
+  opacity: 0;
+  animation: char-fade 0.3s ease-out forwards;
+  animation-delay: calc(0.5s + var(--i) * 0.03s);
+}
+
+.section-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  filter: blur(8px);
+  transition: opacity 0.3s ease, transform 0.3s ease, filter 0.3s ease;
+}
+
+.section-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
