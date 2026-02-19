@@ -26,7 +26,7 @@
 
   <div class="relative z-10 flex flex-1 flex-col min-h-screen">
     <div class="flex flex-1 justify-center">
-      <div class="w-full max-w-md px-4 pt-16">
+      <div class="w-full max-w-[550px] px-4 pt-16">
         <header class="mb-6 flex items-center justify-between">
         <div>
           <a href="/" class="text-[13px] font-medium  text-zinc-900 dark:text-white">Vasuki Sunder</a>
@@ -47,50 +47,102 @@
 
         <section class="section-reveal">
           <h3 class="mb-3 text-[10px] font-medium uppercase tracking-wide text-zinc-500">Work</h3>
-          <div class="flex w-full flex-col space-y-2">
-            <div class="rounded-lg border border-zinc-200/80 bg-zinc-50/50 px-3 py-2.5 dark:border-zinc-800/80 dark:bg-zinc-900/30">
-              <div class="flex w-full flex-row justify-between gap-3">
-                <div>
-                  <h4 class="text-[12px] font-medium tracking-tight text-zinc-900 dark:text-zinc-100">Product Designer</h4>
-                  <p class="text-[12px] font-normal tracking-tight text-zinc-500 dark:text-zinc-400">Julius</p>
+          <div class="flex w-full flex-col space-y-2" id="job-accordion">
+            <div class="job-card rounded-xl border border-zinc-200/70 bg-zinc-50/40 dark:border-zinc-800/70 dark:bg-zinc-900/20 transition-[background-color,border-color] duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]" data-job>
+              <button type="button" class="job-card-trigger w-full cursor-pointer text-left px-3 py-2.5 rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400/50 dark:focus-visible:ring-zinc-500/50" aria-expanded="false" aria-controls="job-1-body" id="job-1-trigger">
+                <div class="flex w-full flex-row justify-between gap-3">
+                  <div>
+                    <h4 class="text-[12px] font-medium tracking-tight text-zinc-900 dark:text-zinc-100">Product Designer</h4>
+                    <p class="text-[12px] font-normal tracking-tight text-zinc-500 dark:text-zinc-400">Julius</p>
+                  </div>
+                  <p class="shrink-0 text-[10px] tabular-nums tracking-tight text-zinc-500 dark:text-zinc-400">May 2025 — Present</p>
                 </div>
-                <p class="shrink-0 text-[10px] tabular-nums tracking-tight text-zinc-500 dark:text-zinc-400">May 2025 — Present</p>
+              </button>
+              <div class="job-card-panel grid transition-[grid-template-rows] duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]" id="job-1-body" style="grid-template-rows: 0fr;">
+                <div class="overflow-hidden">
+                  <ul class="job-bullets list-none pl-3 pr-3 pb-3 pt-0 space-y-1 text-[11px] leading-relaxed text-zinc-600 dark:text-zinc-400">
+                    <li>Led end-to-end redesign of workforce tech tool on AI-powered B2B platform, scaling to 20,000+ users.</li>
+                    <li>Increased feature adoption 60% via novel interaction patterns and conversational AI.</li>
+                    <li>Shipped Supply Chain Explorer and Training Catalog; pioneered flexible filtering architecture.</li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div class="rounded-lg border border-zinc-200/80 bg-zinc-50/50 px-3 py-2.5 dark:border-zinc-800/80 dark:bg-zinc-900/30">
-              <div class="flex w-full flex-row justify-between gap-3">
-                <div>
-                  <h4 class="text-[12px] font-medium tracking-tight text-zinc-900 dark:text-zinc-100">Design Lead & Research Assistant</h4>
-                  <p class="text-[12px] font-normal tracking-tight text-zinc-500 dark:text-zinc-400">Parsons School of Design</p>
+            <div class="job-card rounded-xl border border-zinc-200/70 bg-zinc-50/40 dark:border-zinc-800/70 dark:bg-zinc-900/20 transition-[background-color,border-color] duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]" data-job>
+              <button type="button" class="job-card-trigger w-full cursor-pointer text-left px-3 py-2.5 rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400/50 dark:focus-visible:ring-zinc-500/50" aria-expanded="false" aria-controls="job-2-body" id="job-2-trigger">
+                <div class="flex w-full flex-row justify-between gap-3">
+                  <div>
+                    <h4 class="text-[12px] font-medium tracking-tight text-zinc-900 dark:text-zinc-100">Design Lead & Research Assistant</h4>
+                    <p class="text-[12px] font-normal tracking-tight text-zinc-500 dark:text-zinc-400">Parsons School of Design</p>
+                  </div>
+                  <p class="shrink-0 text-[10px] tabular-nums tracking-tight text-zinc-500 dark:text-zinc-400">Mar 2025 — Present</p>
                 </div>
-                <p class="shrink-0 text-[10px] tabular-nums tracking-tight text-zinc-500 dark:text-zinc-400">Mar 2025 — Present</p>
+              </button>
+              <div class="job-card-panel grid transition-[grid-template-rows] duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]" id="job-2-body" style="grid-template-rows: 0fr;">
+                <div class="overflow-hidden">
+                  <ul class="job-bullets list-none pl-3 pr-3 pb-3 pt-0 space-y-1 text-[11px] leading-relaxed text-zinc-600 dark:text-zinc-400">
+                    <li>Leading design of Parsons MFA/BFA Thesis Exhibition site and brand for 200+ student projects.</li>
+                    <li>Designing and building immersive web experiences exploring classic literature.</li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div class="rounded-lg border border-zinc-200/80 bg-zinc-50/50 px-3 py-2.5 dark:border-zinc-800/80 dark:bg-zinc-900/30">
-              <div class="flex w-full flex-row justify-between gap-3">
-                <div>
-                  <h4 class="text-[12px] font-medium tracking-tight text-zinc-900 dark:text-zinc-100">Product Designer</h4>
-                  <p class="text-[12px] font-normal tracking-tight text-zinc-500 dark:text-zinc-400">CalMatters</p>
+            <div class="job-card rounded-xl border border-zinc-200/70 bg-zinc-50/40 dark:border-zinc-800/70 dark:bg-zinc-900/20 transition-[background-color,border-color] duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]" data-job>
+              <button type="button" class="job-card-trigger w-full cursor-pointer text-left px-3 py-2.5 rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400/50 dark:focus-visible:ring-zinc-500/50" aria-expanded="false" aria-controls="job-3-body" id="job-3-trigger">
+                <div class="flex w-full flex-row justify-between gap-3">
+                  <div>
+                    <h4 class="text-[12px] font-medium tracking-tight text-zinc-900 dark:text-zinc-100">Product Designer</h4>
+                    <p class="text-[12px] font-normal tracking-tight text-zinc-500 dark:text-zinc-400">CalMatters</p>
+                  </div>
+                  <p class="shrink-0 text-[10px] tabular-nums tracking-tight text-zinc-500 dark:text-zinc-400">May 2022 — Aug 2024</p>
                 </div>
-                <p class="shrink-0 text-[10px] tabular-nums tracking-tight text-zinc-500 dark:text-zinc-400">May 2022 — Aug 2024</p>
+              </button>
+              <div class="job-card-panel grid transition-[grid-template-rows] duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]" id="job-3-body" style="grid-template-rows: 0fr;">
+                <div class="overflow-hidden">
+                  <ul class="job-bullets list-none pl-3 pr-3 pb-3 pt-0 space-y-1 text-[11px] leading-relaxed text-zinc-600 dark:text-zinc-400">
+                    <li>Scaled design as sole designer for California’s largest nonpartisan news platform (1.3M monthly users).</li>
+                    <li>Shipped 8 civic engagement tools including statewide Voter Guide (3.2M voters in 2024).</li>
+                    <li>Increased article engagement 34% and newsletter conversions 22% through evidence-based redesign.</li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div class="rounded-lg border border-zinc-200/80 bg-zinc-50/50 px-3 py-2.5 dark:border-zinc-800/80 dark:bg-zinc-900/30">
-              <div class="flex w-full flex-row justify-between gap-3">
-                <div>
-                  <h4 class="text-[12px] font-medium tracking-tight text-zinc-900 dark:text-zinc-100">Visual & UX Designer</h4>
-                  <p class="text-[12px] font-normal tracking-tight text-zinc-500 dark:text-zinc-400">Freelance</p>
+            <div class="job-card rounded-xl border border-zinc-200/70 bg-zinc-50/40 dark:border-zinc-800/70 dark:bg-zinc-900/20 transition-[background-color,border-color] duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]" data-job>
+              <button type="button" class="job-card-trigger w-full cursor-pointer text-left px-3 py-2.5 rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400/50 dark:focus-visible:ring-zinc-500/50" aria-expanded="false" aria-controls="job-4-body" id="job-4-trigger">
+                <div class="flex w-full flex-row justify-between gap-3">
+                  <div>
+                    <h4 class="text-[12px] font-medium tracking-tight text-zinc-900 dark:text-zinc-100">Visual & UX Designer</h4>
+                    <p class="text-[12px] font-normal tracking-tight text-zinc-500 dark:text-zinc-400">Freelance</p>
+                  </div>
+                  <p class="shrink-0 text-[10px] tabular-nums tracking-tight text-zinc-500 dark:text-zinc-400">Jan 2021 — Apr 2022</p>
                 </div>
-                <p class="shrink-0 text-[10px] tabular-nums tracking-tight text-zinc-500 dark:text-zinc-400">Jan 2021 — Apr 2022</p>
+              </button>
+              <div class="job-card-panel grid transition-[grid-template-rows] duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]" id="job-4-body" style="grid-template-rows: 0fr;">
+                <div class="overflow-hidden">
+                  <ul class="job-bullets list-none pl-3 pr-3 pb-3 pt-0 space-y-1 text-[11px] leading-relaxed text-zinc-600 dark:text-zinc-400">
+                    <li>Designed responsive web and mobile experiences; conducted user research and built design systems.</li>
+                    <li>Collaborated directly with engineering teams on handoff and implementation.</li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div class="rounded-lg border border-zinc-200/80 bg-zinc-50/50 px-3 py-2.5 dark:border-zinc-800/80 dark:bg-zinc-900/30">
-              <div class="flex w-full flex-row justify-between gap-3">
-                <div>
-                  <h4 class="text-[12px] font-medium tracking-tight text-zinc-900 dark:text-zinc-100">Technology Analyst</h4>
-                  <p class="text-[12px] font-normal tracking-tight text-zinc-500 dark:text-zinc-400">Accenture</p>
+            <div class="job-card rounded-xl border border-zinc-200/70 bg-zinc-50/40 dark:border-zinc-800/70 dark:bg-zinc-900/20 transition-[background-color,border-color] duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]" data-job>
+              <button type="button" class="job-card-trigger w-full cursor-pointer text-left px-3 py-2.5 rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400/50 dark:focus-visible:ring-zinc-500/50" aria-expanded="false" aria-controls="job-5-body" id="job-5-trigger">
+                <div class="flex w-full flex-row justify-between gap-3">
+                  <div>
+                    <h4 class="text-[12px] font-medium tracking-tight text-zinc-900 dark:text-zinc-100">Technology Analyst</h4>
+                    <p class="text-[12px] font-normal tracking-tight text-zinc-500 dark:text-zinc-400">Accenture</p>
+                  </div>
+                  <p class="shrink-0 text-[10px] tabular-nums tracking-tight text-zinc-500 dark:text-zinc-400">Sep 2018 — Dec 2019</p>
                 </div>
-                <p class="shrink-0 text-[10px] tabular-nums tracking-tight text-zinc-500 dark:text-zinc-400">Sep 2018 — Dec 2019</p>
+              </button>
+              <div class="job-card-panel grid transition-[grid-template-rows] duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]" id="job-5-body" style="grid-template-rows: 0fr;">
+                <div class="overflow-hidden">
+                  <ul class="job-bullets list-none pl-3 pr-3 pb-3 pt-0 space-y-1 text-[11px] leading-relaxed text-zinc-600 dark:text-zinc-400">
+                    <li>Supported design and engineering on enterprise digital transformation for Fortune 500 clients.</li>
+                    <li>Contributed to user research synthesis, front-end implementation, and design-to-dev handoff.</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -119,7 +171,7 @@
 
     <footer class="mt-auto border-t border-zinc-100 px-0 py-3 dark:border-zinc-800">
       <div class="flex justify-center">
-        <div class="w-full max-w-md px-4 flex items-center justify-between">
+        <div class="w-full max-w-[550px] px-4 flex items-center justify-between">
           <a href="https://vasuki.design" target="_blank" rel="noopener noreferrer" class="text-[11px] font-normal text-zinc-500" id="footer-loop">© 2026 Vasuki Sunder.</a>
           <div class="text-[10px] text-zinc-400 flex rounded-lg bg-zinc-100 dark:bg-zinc-800">
             <button type="button" aria-label="Light" data-theme="light" class="theme-btn inline-flex h-7 w-7 items-center justify-center text-zinc-500 transition-colors duration-100 data-[active=true]:text-zinc-950 dark:text-zinc-400 dark:data-[active=true]:text-zinc-50"><span class="text-base leading-none">☀</span></button>

@@ -73,6 +73,44 @@
     });
   }
 
+  function initJobAccordion() {
+    var container = document.getElementById('job-accordion');
+    if (!container) return;
+
+    var cards = container.querySelectorAll('[data-job]');
+    var triggers = container.querySelectorAll('.job-card-trigger');
+    var panels = container.querySelectorAll('.job-card-panel');
+
+    function closeAll() {
+      triggers.forEach(function (btn) {
+        btn.setAttribute('aria-expanded', 'false');
+      });
+      panels.forEach(function (panel) {
+        panel.style.gridTemplateRows = '0fr';
+      });
+    }
+
+    function openPanel(trigger, panel) {
+      closeAll();
+      trigger.setAttribute('aria-expanded', 'true');
+      panel.style.gridTemplateRows = '1fr';
+    }
+
+    triggers.forEach(function (trigger, i) {
+      var panel = panels[i];
+      if (!panel) return;
+
+      trigger.addEventListener('click', function () {
+        var isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+        if (isExpanded) {
+          closeAll();
+        } else {
+          openPanel(trigger, panel);
+        }
+      });
+    });
+  }
+
   function initFooterLoop() {
     var el = document.getElementById('footer-loop');
     if (!el) return;
@@ -168,6 +206,7 @@
 
   initTheme();
   initSectionReveal();
+  initJobAccordion();
   initFooterLoop();
   initSparkles();
 })();
