@@ -74,7 +74,7 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="text-[11px] font-normal leading-snug tracking-tight text-zinc-600 dark:text-zinc-400">
-            Designer interested in making technology feel more human..
+            Designer interested in making technology feel more human.
           </p>
         </div>
       </motion.section>
